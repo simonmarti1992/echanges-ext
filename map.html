@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6d41f6dc998148d2911183bd1efd8785 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6d41f6dc998148d2911183bd1efd8785" ></div>
+        
+</body>
+<script>    
+    
+            var map_6d41f6dc998148d2911183bd1efd8785 = L.map(
+                "map_6d41f6dc998148d2911183bd1efd8785",
+                {
+                    center: [48.8588897, 2.3200410217200766],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_724b1b10c9804834b90d258c6c793aeb = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+            var circle_dcbe827d2c8b44a49afe0d8fe3dfa2eb = L.circle(
+                [47.2186371, -1.5541362],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8caefc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 47775.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_b5b27b8b196f47e8ac6f82b92954e41a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05c4fece40ee40fe9b786ed126b1da36 = $(`<div id="html_05c4fece40ee40fe9b786ed126b1da36" style="width: 100.0%; height: 100.0%;">Nantes</div>`)[0];
+            popup_b5b27b8b196f47e8ac6f82b92954e41a.setContent(html_05c4fece40ee40fe9b786ed126b1da36);
+        
+
+        circle_dcbe827d2c8b44a49afe0d8fe3dfa2eb.bindPopup(popup_b5b27b8b196f47e8ac6f82b92954e41a)
+        ;
+
+        
+    
+    
+        var popup_558a5631013e4ad4b4e0261cc0029fb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_825d2c9e0c474e8aaa1e302b34352ec6 = $(`<div id="html_825d2c9e0c474e8aaa1e302b34352ec6" style="width: 100.0%; height: 100.0%;">Besoins chaud=74.5_kWh/m² froid=21.1_kWh/m² tot=95.6_kWh/m²</div>`)[0];
+            popup_558a5631013e4ad4b4e0261cc0029fb1.setContent(html_825d2c9e0c474e8aaa1e302b34352ec6);
+        
+
+        circle_dcbe827d2c8b44a49afe0d8fe3dfa2eb.bindPopup(popup_558a5631013e4ad4b4e0261cc0029fb1)
+        ;
+
+        
+    
+    
+            var circle_a0119791ddc340d4876a924a0e70659e = L.circle(
+                [44.841225, -0.5800364],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f3987a", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 52145.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_203878d0a5814ec3be0922201788ce26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89aee272148c48b5a0446feef1ed2393 = $(`<div id="html_89aee272148c48b5a0446feef1ed2393" style="width: 100.0%; height: 100.0%;">Bordeaux</div>`)[0];
+            popup_203878d0a5814ec3be0922201788ce26.setContent(html_89aee272148c48b5a0446feef1ed2393);
+        
+
+        circle_a0119791ddc340d4876a924a0e70659e.bindPopup(popup_203878d0a5814ec3be0922201788ce26)
+        ;
+
+        
+    
+    
+        var popup_849456d087b847a3931cd3542fa5fffe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_666ff27c8a2c4a5bb57221e0a0b3978b = $(`<div id="html_666ff27c8a2c4a5bb57221e0a0b3978b" style="width: 100.0%; height: 100.0%;">Besoins chaud=65.0_kWh/m² froid=39.3_kWh/m² tot=104.3_kWh/m²</div>`)[0];
+            popup_849456d087b847a3931cd3542fa5fffe.setContent(html_666ff27c8a2c4a5bb57221e0a0b3978b);
+        
+
+        circle_a0119791ddc340d4876a924a0e70659e.bindPopup(popup_849456d087b847a3931cd3542fa5fffe)
+        ;
+
+        
+    
+    
+            var circle_199ced2818fb4b4d85a4377fcba7ce96 = L.circle(
+                [48.6937223, 6.1834097],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#536fdc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 65290.00000000001, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_f3a256340de84c5fa619a658d613c12e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a907762790146f389021827515dd0b8 = $(`<div id="html_2a907762790146f389021827515dd0b8" style="width: 100.0%; height: 100.0%;">Nancy</div>`)[0];
+            popup_f3a256340de84c5fa619a658d613c12e.setContent(html_2a907762790146f389021827515dd0b8);
+        
+
+        circle_199ced2818fb4b4d85a4377fcba7ce96.bindPopup(popup_f3a256340de84c5fa619a658d613c12e)
+        ;
+
+        
+    
+    
+        var popup_2b45ffb787684961931eaf5bdf43cb65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6a72cae30a148aebd500e9e86aa8df1 = $(`<div id="html_a6a72cae30a148aebd500e9e86aa8df1" style="width: 100.0%; height: 100.0%;">Besoins chaud=114.2_kWh/m² froid=16.4_kWh/m² tot=130.6_kWh/m²</div>`)[0];
+            popup_2b45ffb787684961931eaf5bdf43cb65.setContent(html_a6a72cae30a148aebd500e9e86aa8df1);
+        
+
+        circle_199ced2818fb4b4d85a4377fcba7ce96.bindPopup(popup_2b45ffb787684961931eaf5bdf43cb65)
+        ;
+
+        
+    
+    
+            var circle_112220296bfb40d0af857301ea1005db = L.circle(
+                [48.8588897, 2.3200410217200766],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dddddd", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 52040.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_214d517e360c40529a53f03e0cc40f76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91126ff3abc04f0a98a324e0e0c44b38 = $(`<div id="html_91126ff3abc04f0a98a324e0e0c44b38" style="width: 100.0%; height: 100.0%;">Paris</div>`)[0];
+            popup_214d517e360c40529a53f03e0cc40f76.setContent(html_91126ff3abc04f0a98a324e0e0c44b38);
+        
+
+        circle_112220296bfb40d0af857301ea1005db.bindPopup(popup_214d517e360c40529a53f03e0cc40f76)
+        ;
+
+        
+    
+    
+        var popup_17a5c5e0c8d948c8a7db2e848488b52f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7af5c70ea4c6474b9abeabc1cbbf202e = $(`<div id="html_7af5c70ea4c6474b9abeabc1cbbf202e" style="width: 100.0%; height: 100.0%;">Besoins chaud=76.0_kWh/m² froid=28.1_kWh/m² tot=104.1_kWh/m²</div>`)[0];
+            popup_17a5c5e0c8d948c8a7db2e848488b52f.setContent(html_7af5c70ea4c6474b9abeabc1cbbf202e);
+        
+
+        circle_112220296bfb40d0af857301ea1005db.bindPopup(popup_17a5c5e0c8d948c8a7db2e848488b52f)
+        ;
+
+        
+    
+    
+            var circle_309b26d582f242e1a65f732ac403dab7 = L.circle(
+                [43.6044622, 1.4442469],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e6745b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 52610.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_3cc0af50e82546ceb5a24d8246e366c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e8ad4daae394091bd3abf2ac6dae6eb = $(`<div id="html_4e8ad4daae394091bd3abf2ac6dae6eb" style="width: 100.0%; height: 100.0%;">Toulouse</div>`)[0];
+            popup_3cc0af50e82546ceb5a24d8246e366c8.setContent(html_4e8ad4daae394091bd3abf2ac6dae6eb);
+        
+
+        circle_309b26d582f242e1a65f732ac403dab7.bindPopup(popup_3cc0af50e82546ceb5a24d8246e366c8)
+        ;
+
+        
+    
+    
+        var popup_99bd7a7fd7474f27a077348748210226 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e32aee5262054dbc96c069e38b8d789c = $(`<div id="html_e32aee5262054dbc96c069e38b8d789c" style="width: 100.0%; height: 100.0%;">Besoins chaud=65.3_kWh/m² froid=39.9_kWh/m² tot=105.2_kWh/m²</div>`)[0];
+            popup_99bd7a7fd7474f27a077348748210226.setContent(html_e32aee5262054dbc96c069e38b8d789c);
+        
+
+        circle_309b26d582f242e1a65f732ac403dab7.bindPopup(popup_99bd7a7fd7474f27a077348748210226)
+        ;
+
+        
+    
+    
+            var circle_42e9bb0a6df346088ccce1e8bacab006 = L.circle(
+                [43.6112422, 3.8767337],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0493e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 49825.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_e3331ef77d274792b0ebfcc22b6939f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_067a05f4cb774490981bb3153a427d72 = $(`<div id="html_067a05f4cb774490981bb3153a427d72" style="width: 100.0%; height: 100.0%;">Montpellier</div>`)[0];
+            popup_e3331ef77d274792b0ebfcc22b6939f8.setContent(html_067a05f4cb774490981bb3153a427d72);
+        
+
+        circle_42e9bb0a6df346088ccce1e8bacab006.bindPopup(popup_e3331ef77d274792b0ebfcc22b6939f8)
+        ;
+
+        
+    
+    
+        var popup_06eae3afbfcf4f2891d1c818e53c4265 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbf2335f8199420b932d7674e1174174 = $(`<div id="html_fbf2335f8199420b932d7674e1174174" style="width: 100.0%; height: 100.0%;">Besoins chaud=49.1_kWh/m² froid=50.6_kWh/m² tot=99.6_kWh/m²</div>`)[0];
+            popup_06eae3afbfcf4f2891d1c818e53c4265.setContent(html_fbf2335f8199420b932d7674e1174174);
+        
+
+        circle_42e9bb0a6df346088ccce1e8bacab006.bindPopup(popup_06eae3afbfcf4f2891d1c818e53c4265)
+        ;
+
+        
+    
+    
+            var circle_9f834b2c191a41148e63f24dbc5962ea = L.circle(
+                [46.159842, -1.151231],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eecdbc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44395.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_d0e18401161b4483bce67de3b6e898fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0d2b6a81faa4e1cbc0f0302601863ef = $(`<div id="html_e0d2b6a81faa4e1cbc0f0302601863ef" style="width: 100.0%; height: 100.0%;">LaRochelle</div>`)[0];
+            popup_d0e18401161b4483bce67de3b6e898fb.setContent(html_e0d2b6a81faa4e1cbc0f0302601863ef);
+        
+
+        circle_9f834b2c191a41148e63f24dbc5962ea.bindPopup(popup_d0e18401161b4483bce67de3b6e898fb)
+        ;
+
+        
+    
+    
+        var popup_3a65e9f66f9f4df6b659eed1fe100a9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2454a6a91bba45d3be269c59456506e5 = $(`<div id="html_2454a6a91bba45d3be269c59456506e5" style="width: 100.0%; height: 100.0%;">Besoins chaud=58.3_kWh/m² froid=30.5_kWh/m² tot=88.8_kWh/m²</div>`)[0];
+            popup_3a65e9f66f9f4df6b659eed1fe100a9b.setContent(html_2454a6a91bba45d3be269c59456506e5);
+        
+
+        circle_9f834b2c191a41148e63f24dbc5962ea.bindPopup(popup_3a65e9f66f9f4df6b659eed1fe100a9b)
+        ;
+
+        
+    
+    
+            var circle_b26dcb39fe384858bfc86e307afbd0db = L.circle(
+                [50.6365654, 3.0635282],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3b4cc0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 53795.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_4f3f08c04b604ab7bbf55f43fd8d4dc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2f770267fe54f9ca19ec9208cebee79 = $(`<div id="html_e2f770267fe54f9ca19ec9208cebee79" style="width: 100.0%; height: 100.0%;">Lille</div>`)[0];
+            popup_4f3f08c04b604ab7bbf55f43fd8d4dc6.setContent(html_e2f770267fe54f9ca19ec9208cebee79);
+        
+
+        circle_b26dcb39fe384858bfc86e307afbd0db.bindPopup(popup_4f3f08c04b604ab7bbf55f43fd8d4dc6)
+        ;
+
+        
+    
+    
+        var popup_6a9ebf8b26db4636b0e28fdbd890e465 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a3750f0e4904d71a2058752b9036d59 = $(`<div id="html_9a3750f0e4904d71a2058752b9036d59" style="width: 100.0%; height: 100.0%;">Besoins chaud=94.0_kWh/m² froid=13.6_kWh/m² tot=107.6_kWh/m²</div>`)[0];
+            popup_6a9ebf8b26db4636b0e28fdbd890e465.setContent(html_9a3750f0e4904d71a2058752b9036d59);
+        
+
+        circle_b26dcb39fe384858bfc86e307afbd0db.bindPopup(popup_6a9ebf8b26db4636b0e28fdbd890e465)
+        ;
+
+        
+    
+    
+            var circle_560ea372162f48b480d18aedb9e97742 = L.circle(
+                [43.2961743, 5.3699525],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b40426", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 53655.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_9a39170490de435dacb4ffed6267d6d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1baa8d3f3f18414cb4b3a860f11a6425 = $(`<div id="html_1baa8d3f3f18414cb4b3a860f11a6425" style="width: 100.0%; height: 100.0%;">Marseille</div>`)[0];
+            popup_9a39170490de435dacb4ffed6267d6d1.setContent(html_1baa8d3f3f18414cb4b3a860f11a6425);
+        
+
+        circle_560ea372162f48b480d18aedb9e97742.bindPopup(popup_9a39170490de435dacb4ffed6267d6d1)
+        ;
+
+        
+    
+    
+        var popup_0e21102709204135a46ecc09877ef6ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b87322d5a694519999f410d195d8f1f = $(`<div id="html_7b87322d5a694519999f410d195d8f1f" style="width: 100.0%; height: 100.0%;">Besoins chaud=50.8_kWh/m² froid=56.6_kWh/m² tot=107.3_kWh/m²</div>`)[0];
+            popup_0e21102709204135a46ecc09877ef6ca.setContent(html_7b87322d5a694519999f410d195d8f1f);
+        
+
+        circle_560ea372162f48b480d18aedb9e97742.bindPopup(popup_0e21102709204135a46ecc09877ef6ca)
+        ;
+
+        
+    
+    
+            var circle_66de45350ba54967ae42b1341d6e4bd4 = L.circle(
+                [48.0777517, 7.3579641],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c5d5f1", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 63860.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_62ab59934fb64aa4aadbb225d76f3dbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f98869c0d89445b936204063ff08917 = $(`<div id="html_5f98869c0d89445b936204063ff08917" style="width: 100.0%; height: 100.0%;">Colmar</div>`)[0];
+            popup_62ab59934fb64aa4aadbb225d76f3dbd.setContent(html_5f98869c0d89445b936204063ff08917);
+        
+
+        circle_66de45350ba54967ae42b1341d6e4bd4.bindPopup(popup_62ab59934fb64aa4aadbb225d76f3dbd)
+        ;
+
+        
+    
+    
+        var popup_a7dbb63b584140c788d99c034ff70747 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0b9c729519c4cb88ec5d382f55847ca = $(`<div id="html_b0b9c729519c4cb88ec5d382f55847ca" style="width: 100.0%; height: 100.0%;">Besoins chaud=101.7_kWh/m² froid=26.0_kWh/m² tot=127.7_kWh/m²</div>`)[0];
+            popup_a7dbb63b584140c788d99c034ff70747.setContent(html_b0b9c729519c4cb88ec5d382f55847ca);
+        
+
+        circle_66de45350ba54967ae42b1341d6e4bd4.bindPopup(popup_a7dbb63b584140c788d99c034ff70747)
+        ;
+
+        
+    
+    
+            var circle_5c3110dd4b164b6ebc47d192b3f5a760 = L.circle(
+                [45.7578137, 4.8320114],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6b69b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 56790.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_70b701c73edf40f7a2f91d27a8114826 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b20e612f72d5431ca92412c0ac4f0273 = $(`<div id="html_b20e612f72d5431ca92412c0ac4f0273" style="width: 100.0%; height: 100.0%;">Lyon</div>`)[0];
+            popup_70b701c73edf40f7a2f91d27a8114826.setContent(html_b20e612f72d5431ca92412c0ac4f0273);
+        
+
+        circle_5c3110dd4b164b6ebc47d192b3f5a760.bindPopup(popup_70b701c73edf40f7a2f91d27a8114826)
+        ;
+
+        
+    
+    
+        var popup_307a15587933464489a49b5b7668c621 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4186c5dc58540289f213e9789d1e89c = $(`<div id="html_e4186c5dc58540289f213e9789d1e89c" style="width: 100.0%; height: 100.0%;">Besoins chaud=80.5_kWh/m² froid=33.1_kWh/m² tot=113.6_kWh/m²</div>`)[0];
+            popup_307a15587933464489a49b5b7668c621.setContent(html_e4186c5dc58540289f213e9789d1e89c);
+        
+
+        circle_5c3110dd4b164b6ebc47d192b3f5a760.bindPopup(popup_307a15587933464489a49b5b7668c621)
+        ;
+
+        
+    
+    
+            var circle_4552244ae69f4d27b24c950832b4d2e1 = L.circle(
+                [48.584614, 7.7507127],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6f91f2", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 59770.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_17b13c5f09554a0fad7bdc0a4b46696e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6fbba674761418c867be7ec1e92dcab = $(`<div id="html_b6fbba674761418c867be7ec1e92dcab" style="width: 100.0%; height: 100.0%;">Strasbourg</div>`)[0];
+            popup_17b13c5f09554a0fad7bdc0a4b46696e.setContent(html_b6fbba674761418c867be7ec1e92dcab);
+        
+
+        circle_4552244ae69f4d27b24c950832b4d2e1.bindPopup(popup_17b13c5f09554a0fad7bdc0a4b46696e)
+        ;
+
+        
+    
+    
+        var popup_088f3c4b6f654c1eaf526143c5845084 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84dbbf815e3545dfaea17ae2d1c89cf7 = $(`<div id="html_84dbbf815e3545dfaea17ae2d1c89cf7" style="width: 100.0%; height: 100.0%;">Besoins chaud=99.5_kWh/m² froid=20.0_kWh/m² tot=119.5_kWh/m²</div>`)[0];
+            popup_088f3c4b6f654c1eaf526143c5845084.setContent(html_84dbbf815e3545dfaea17ae2d1c89cf7);
+        
+
+        circle_4552244ae69f4d27b24c950832b4d2e1.bindPopup(popup_088f3c4b6f654c1eaf526143c5845084)
+        ;
+
+        
+    
+    
+            var circle_bfba795b4450462fba9a8ca954fb763c = L.circle(
+                [45.1875602, 5.7357819],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a9c5fc", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 62860.0, "stroke": true, "weight": 3}
+            ).addTo(map_6d41f6dc998148d2911183bd1efd8785);
+        
+    
+        var popup_f28c3fb82c2948c5b84966e99c1157e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f78a995fa9be43888b59b3d161174ccd = $(`<div id="html_f78a995fa9be43888b59b3d161174ccd" style="width: 100.0%; height: 100.0%;">Grenoble</div>`)[0];
+            popup_f28c3fb82c2948c5b84966e99c1157e7.setContent(html_f78a995fa9be43888b59b3d161174ccd);
+        
+
+        circle_bfba795b4450462fba9a8ca954fb763c.bindPopup(popup_f28c3fb82c2948c5b84966e99c1157e7)
+        ;
+
+        
+    
+    
+        var popup_2aefd4d547de48faa9f66a69d0445fb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4962c18e926b4dbc9a017141d9933fd5 = $(`<div id="html_4962c18e926b4dbc9a017141d9933fd5" style="width: 100.0%; height: 100.0%;">Besoins chaud=102.2_kWh/m² froid=23.6_kWh/m² tot=125.7_kWh/m²</div>`)[0];
+            popup_2aefd4d547de48faa9f66a69d0445fb7.setContent(html_4962c18e926b4dbc9a017141d9933fd5);
+        
+
+        circle_bfba795b4450462fba9a8ca954fb763c.bindPopup(popup_2aefd4d547de48faa9f66a69d0445fb7)
+        ;
+
+        
+    
+</script>
